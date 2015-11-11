@@ -1,0 +1,23 @@
+{
+  "name": "smaps.js",
+  "version": "0.1.0",
+  "description": "pretty view of /proc/?/smaps",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^1.5.0",
+    "body-parser": "^1.14.1",
+    "compression": "^1.6.0",
+    "debug": "^2.2.0",
+    "ejs": "^2.3.4",
+    "express": "^4.11.1",
+    "morgan": "^1.6.1",
+    "multer": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodejs server.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
