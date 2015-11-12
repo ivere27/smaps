@@ -1,10 +1,12 @@
 # smaps - pretty view of smaps
 
+# Features
+
 - Download raw smaps file by double clicking pid.
 - Drag-n-drop a smaps file to browser in order to parse.
+- Samps to Excel Exports(thanks to Datatables)
 - Android device's smaps supports.
 - Tizen device's smaps supports.
-- Samps to Excel Exports(thanks to Datatables)
 
 ## How to use
 

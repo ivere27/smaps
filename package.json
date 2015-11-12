@@ -1,6 +1,6 @@
 {
   "name": "smaps",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "pretty view of /proc/[0-9]/smaps",
   "main": "index.js",
   "dependencies": {
