@@ -1,7 +1,7 @@
 {
   "name": "smaps",
-  "version": "0.2.0",
-  "description": "pretty view of /proc/?/smaps",
+  "version": "0.2.1",
+  "description": "pretty view of /proc/[0-9]/smaps",
   "main": "index.js",
   "dependencies": {
     "async": "^1.5.0",
