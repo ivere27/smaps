@@ -1,8 +1,29 @@
 {
   "name": "smaps",
-  "version": "0.2.2",
   "description": "pretty view of /proc/[0-9]/smaps",
+  "version": "0.2.3",
+  "author": {
+    "name": "HoYong Jung",
+    "email": ""
+  },
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodejs server.js"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivere27/smaps"
+  },
+  "homepage": "",
+  "keywords": [
+    "smaps",
+    "linux",
+    "kernel",
+    "android",
+    "tizen"
+  ],
   "dependencies": {
     "async": "^1.5.0",
     "body-parser": "^1.14.1",
@@ -12,12 +33,5 @@
     "express": "^4.11.1",
     "morgan": "^1.6.1",
     "multer": "^1.1.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodejs server.js"
-  },
-  "author": "",
-  "license": "MIT"
+  }
 }
