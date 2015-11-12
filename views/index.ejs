@@ -85,7 +85,7 @@ $(document).ready(function() {
   var table;
   $.ajax({
     type : "GET",
-    url : "/proc/cmdline",
+    url : "<%= apiPrefix %>/proc/cmdline",
     success : function(data) {
       table = $("#pid").DataTable( {
         data: data,
@@ -126,7 +126,7 @@ $(document).ready(function() {
 
       $.ajax({
         type : "GET",
-        url : "/smaps/" + pid + "/object",
+        url : "<%= apiPrefix %>/smaps/" + pid + "/object",
         success : function(data) {
           $("#name").val(cmdline);
           showSmapsDatatable(pid, data);
@@ -142,7 +142,7 @@ $(document).ready(function() {
       var cmdline = $(this).find("td:eq(1)").html();
 
       //download raw smaps file.
-      window.location = "/smaps/" + pid + "/raw";
+      window.location = "<%= apiPrefix %>/smaps/" + pid + "/raw";
       // $.ajax({
       //   type : "GET",
       //   url : "/smaps/" + pid + "/raw",

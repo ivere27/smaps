@@ -32,7 +32,9 @@ process.on('uncaughtException', function (err) {
 });
 
 var routerIndex = require('./routes/routerIndex')(express);
+var routerTizen = require('./routes/routerTizen')(express);
 app.use('/', routerIndex);
+app.use('/tizen', routerTizen);
 
 server.listen(8888, function() {
   var host = server.address().address;
