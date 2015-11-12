@@ -33,12 +33,14 @@ process.on('uncaughtException', function (err) {
 
 var routerIndex = require('./routes/routerIndex')(express);
 var routerTizen = require('./routes/routerTizen')(express);
+var routerAndroid = require('./routes/routerAndroid')(express);
 app.use('/', routerIndex);
 app.use('/tizen', routerTizen);
+app.use('/android', routerAndroid);
 
 server.listen(8888, function() {
   var host = server.address().address;
   var port = server.address().port;
 
-  console.log('smaps.js listening at http://%s:%s', host, port);
+  console.log('smaps listening at http://%s:%s', host, port);
 });
