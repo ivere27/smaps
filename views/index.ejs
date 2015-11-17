@@ -67,6 +67,9 @@ var showSmapsDatatable = function(id, data) {
       {"data": "Locked"        , "title" : "Locked"        , "visible": false },
       {"data": "VmFlags"       , "title" : "VmFlags"       , "visible": false }
     ],
+    "columnDefs": [
+      { className: "dt-body-right", "targets": [ 7,8,9,10,11,12,13 ] }
+    ],
     paging: false,
     scrollX: true,
     scrollY: true,
@@ -92,6 +95,9 @@ $(document).ready(function() {
         columns: [
           { "data": "pid", "title" : "pid"},
           { "data": "cmdline", "title" : "cmdline"}
+        ],
+        "columnDefs": [
+          { className: "dt-body-right", "targets": [ 0 ] }
         ],
         paging: false,
         scrollX: true,
