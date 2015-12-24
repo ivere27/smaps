@@ -15,7 +15,7 @@ module.exports = function(express) {
   router.get('/proc/cmdline', function(req, res) {
     tizen.readProcCmdline(function(err,cmdline){
       if (err)
-        return res.status(400).send('error.');
+        return res.status(400).send('error : ' + err);
 
       res.send(cmdline);
     })

@@ -114,6 +114,7 @@ $(document).ready(function() {
     },
     error : function(xhr, status, error) {
       console.log("error : " + error);
+      alert(xhr.responseText);
     }
   });
 

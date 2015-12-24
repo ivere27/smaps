@@ -1,7 +1,7 @@
 {
   "name": "smaps",
-  "description": "pretty view of /proc/[0-9]/smaps",
-  "version": "0.2.4",
+  "description": "pretty view of /proc/[0-9]+/smaps",
+  "version": "0.2.5",
   "author": {
     "name": "HoYong Jung",
     "email": ""
@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodejs server.js"
+    "start": "node server.js"
   },
   "license": "MIT",
   "repository": {
@@ -19,6 +19,7 @@
   "homepage": "",
   "keywords": [
     "smaps",
+    "memory",
     "linux",
     "kernel",
     "android",

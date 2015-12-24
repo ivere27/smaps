@@ -1,0 +1,4 @@
+{
+  "SDB_PATH" : "/usr/bin/sdb",
+  "ADB_PATH" : "/usr/bin/adb"
+}
