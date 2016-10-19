@@ -39,3 +39,7 @@ check devices by
 and check SDB_PATH in settings.json, then
 
      http://localhost:8888/tizen
+
+# License
+
+MIT
